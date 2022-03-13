@@ -1,0 +1,19 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nikkovalev/weather-cli.git"
+  },
+  "author": "Nikita Kovalev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikkovalev/weather-cli/issues"
+  },
+  "homepage": "https://github.com/nikkovalev/weather-cli#readme"
+}
