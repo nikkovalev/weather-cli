@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "weather.js",
+  "bin": {
+    "weather": "./weather.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +16,14 @@
   "author": "Nikita Kovalev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nikkovalev/weather-cli/issues"
+    "url": "https://github.com/nikkovalev/weather-cli/issues",
+    "email": "nikitakovalev963@gmail.com"
   },
-  "homepage": "https://github.com/nikkovalev/weather-cli#readme"
+  "homepage": "https://github.com/nikkovalev/weather-cli#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1"
+  },
+  "type": "module"
 }
