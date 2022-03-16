@@ -1,4 +1,4 @@
-export const getArgs = (args) => {
+const getArgs = (args) => {
   const res = {};
   const [executer, file, ...rest] = args;
   rest.forEach((value, index, array) => {
@@ -12,3 +12,5 @@ export const getArgs = (args) => {
   });
   return res;
 };
+
+export { getArgs };

@@ -2,27 +2,11 @@ import { homedir } from "os";
 import { join } from "path";
 import { promises } from "fs";
 
-// import {
-//   basename,
-//   extname,
-//   dirname,
-//   relative,
-//   isAbsolute,
-//   resolve,
-//   sep,
-// } from "path";
-
-// console.log(
-//   basename(filePath),
-//   extname(filePath),
-//   dirname(filePath),
-//   relative(filePath, dirname(filePath)),
-//   isAbsolute(filePath),
-//   resolve(".."),
-//   sep
-// );
-
 const filePath = join(homedir(), "weather-data.json");
+const TOKEN_DICTIONARY = {
+  token: "token",
+  city: "city",
+};
 
 const isExist = async (path) => {
   try {
@@ -55,4 +39,4 @@ const saveKeyValue = async (key, value) => {
   await promises.writeFile(filePath, JSON.stringify(data));
 };
 
-export { saveKeyValue };
+export { saveKeyValue, getKeyValue, TOKEN_DICTIONARY };

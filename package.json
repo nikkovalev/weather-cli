@@ -1,6 +1,6 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
+  "name": "weather-cli-js",
+  "version": "1.0.1",
   "description": "CLI for getting weather",
   "main": "weather.js",
   "bin": {
@@ -25,5 +25,6 @@
     "chalk": "^5.0.1",
     "dedent-js": "^1.0.1"
   },
+  "keywords": ["weather-cli", "weather", "nodejs", "js"],
   "type": "module"
 }
